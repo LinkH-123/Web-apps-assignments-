@@ -42,3 +42,19 @@ function findSum() {
         document.getElementById("sumOutput").textContent = sum;
     
 }
+
+function getStringLength() {
+    let text = document.getElementById("entry").value; // Get the value of the input field with id "entry"
+    let length = text.length; // Get the length of the string
+
+    document.getElementById("stringLengthOutput").textContent = length; // Display the length in the element with id "stringLengthOutput"
+}
+
+function togglePassword(){
+    let passwordInput = document.getElementById("Password");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
